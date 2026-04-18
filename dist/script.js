@@ -1,6 +1,6 @@
 /* ── SCROLL RESTORATION ── */
 if (history.scrollRestoration) history.scrollRestoration = "manual";
-window.scrollTo(0, 0);
+window.addEventListener("load", () => { window.scrollTo(0, 0); });
 
 /* ── REVEAL ON SCROLL ── */
 const reveals = document.querySelectorAll(".reveal");
