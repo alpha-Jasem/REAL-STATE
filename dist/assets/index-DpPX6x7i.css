@@ -173,15 +173,40 @@
   .badge-circle{display:none}
   .footer{grid-template-columns:1fr}
   .map-grid{grid-template-columns:1fr}
+  .section{padding:80px clamp(18px,4vw,60px)}
+  .hero-content h1{font-size:clamp(1.6rem,5vw,3rem) !important}
 }
 @media (max-width:640px){
-  .site-header{gap:12px;padding:16px 18px}
-  .brand img{height:36px}
-  .nav-cta{min-height:38px;padding:0 14px;font-size:.8rem}
-  .hero-content{padding:120px 20px 72px}
-  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .site-header{gap:8px;padding:12px 16px}
+  .brand img,.footer-brand img{height:40px}
+  .nav-cta{min-height:36px;padding:0 12px;font-size:.78rem}
+  .hero-content{padding:100px 18px 60px}
+  .hero-content h1{font-size:clamp(1.4rem,6.5vw,2rem) !important;line-height:1.2}
+  .hero-content>p{font-size:.95rem;margin-bottom:22px}
+  .hero-actions{gap:8px}
+  .primary-btn,.ghost-btn{min-height:40px;padding:0 16px;font-size:.85rem}
+  .section{padding:70px 18px}
+  .section-head{margin-bottom:36px}
+  .section-head h2,.cta-content h2{font-size:clamp(1.6rem,6vw,2.4rem)}
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .stat-item{padding:20px 10px}
+  .stat-item strong{font-size:1.6rem}
+  .stats-grid{grid-template-columns:1fr 1fr}
   .services-grid,.credential-grid,.activities-grid,.values-grid{grid-template-columns:1fr}
-  .footer{grid-template-columns:1fr}
+  .vision-grid{gap:12px}
+  .vision-card{padding:24px 20px}
+  .coverage-section{padding:60px 18px}
+  .coverage-stats{gap:24px;flex-wrap:wrap;justify-content:center}
+  .cta-section{padding:70px 18px}
+  .cta-counters{gap:24px;flex-wrap:wrap}
+  .cta-counter strong{font-size:2rem}
+  .map-grid{gap:20px}
+  .map-frame iframe{height:280px}
+  .footer{grid-template-columns:1fr;gap:24px;padding:36px 18px}
   .stat{border-left:0;border-bottom:1px solid rgba(255,255,255,.08)}
   .stat:last-child{border-bottom:0}
+  .b3,.b4,.b5{display:none}
+  .b1{width:50px;height:40vh}
+  .b2{width:36px;height:30vh}
+  .whatsapp-float{width:44px;height:44px;bottom:16px;left:16px}
 }
