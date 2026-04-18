@@ -1,3 +1,7 @@
+/* ── SCROLL RESTORATION ── */
+if (history.scrollRestoration) history.scrollRestoration = "manual";
+window.scrollTo(0, 0);
+
 /* ── REVEAL ON SCROLL ── */
 const reveals = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver(
