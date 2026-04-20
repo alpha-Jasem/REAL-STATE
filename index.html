@@ -31,7 +31,7 @@
 
     <main>
       <section class="hero" id="home">
-        <video class="hero-video" src="public/hero.mp4" muted autoplay loop playsinline preload="auto"></video>
+        <video class="hero-video" src="20260420_193914_output_tiny_s3_20260420-193730.mp4" muted autoplay loop playsinline preload="auto"></video>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Quality Real Estate</p>
@@ -164,5 +164,21 @@
     <a class="whatsapp-float" href="https://wa.me/966555776728" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
       واتساب
     </a>
+
+    <script>
+      (function () {
+        var video = document.querySelector('.hero-video');
+        var hero  = document.querySelector('.hero');
+        function onScroll() {
+          var scrollY = window.scrollY;
+          var heroH   = hero.offsetHeight;
+          if (scrollY < heroH) {
+            video.style.transform = 'translateY(' + (scrollY * 0.38) + 'px)';
+          }
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
   </body>
 </html>
